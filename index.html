@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+    "width=device-width, 
+    initial-scale=1.0">
+    <title>LUXLUPEZ Traders</title>
+    <style>
+        body{
+            background-color: #ccc;
+            margin: 0px;
+            padding: 0px;
+        }
+/*Start of mobile size 
+logo container*/
+ .logo-container{
+    display: inline-flex;
+    flex: 1;
+    position: absolute;
+    width: 101%;
+    margin-top: 0px;
+    background-color: rgba(00, 70, 85, 9);
+}
+img{
+    height: 125px;
+    width: 120px;
+}
+.logo-image{
+    display: inline-flex;
+    position: relative;
+    width: 120px;
+    height: 200px;
+}
+/*End of mobile size logo container*/
+/*Start of the words in the logo container*/
+h1, h2{
+    display: inline;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+h2{
+    margin-top: 58px;
+    margin-left: -142px;
+}
+/*End of words in the logo container*/
+
+/*Begin of the nav bar*/
+ul{
+    background-color: black;
+    display: inline-flex;
+    flex: 1;
+    margin-top: 127px;
+    height: 38px;
+    width: 91%;
+    position: sticky ;
+    z-index: 1000;
+    margin-bottom: 0px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding-left: 5px;
+    display: flex;
+    flex: 1;
+    user-select: none;
+}
+a:hover{
+    background-color: blue;
+    transition: 0.8s ease;
+}
+.home{
+    margin-left: -40px;
+    margin-right: 0px;
+}
+.deriv{
+    margin-right: 15px;
+}
+.trade-hub{
+    margin-right: 40px;
+}
+/*End of the nav bar*/
+
+/*Begin of the adjustment of the first picture*/
+    .bot-containers{
+        background-color: black;
+        display: flex;
+        flex: 1;
+        margin-top: 1px;
+        position: absolute;
+        width: 100%;
+    }
+    .img{
+        width: 100%;
+        height: auto;
+    }
+    .first-image{
+        width: 180px;
+        height: auto;
+    }
+/*End of the adjustment of the first picture*/
+
+/*Begin of the adjustment of the second picture*/
+    .second-container{
+        background-color: red;
+        display: flex;
+        flex: 1;
+        margin-top: 305px;
+        position: absolute;
+        width: 100%;
+    }
+    .Second-image{
+        display: flex;
+        justify-items: end;
+        margin-left: auto;
+        width: 180px;
+        height: auto;
+    }
+/*End of the adjustment of the second picture*/
+
+/*Begin of the words in the fisrt container*/
+
+    .first-words{
+        display: block;
+        flex: 1;
+        background-color: black;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-top: 0px;
+        margin-left: 10px;
+    }
+    .first-word{
+        margin-bottom: 10px;
+        margin-top: 0px;
+        display: flex;  
+        flex: 1;
+        color: #ccc;
+    }
+    .Second-words{
+        color: white;
+        display: flex;
+        flex: 1;
+    }
+/*End of the words in the first container*/
+
+/*Begin of words in the second-container*/
+    .second-words{
+        display: flex;
+        flex: 1;
+        flex-direction: column-reverse;
+        justify-items: start;
+        margin-right: auto;
+        position: relative;
+        background-color: aqua;
+        flex-direction: row-reverse;
+    }
+    .words{
+        display: flex;
+        flex: 1;
+        margin-right: auto;
+        justify-items: end;
+        flex-direction: row-reverse;
+    }
+/*End of words in the second-container*/
+
+/*Start of css for the popup*/
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999; /* Just below the popup */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.popup-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.popup-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.signup-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+/*End of css for the popup*/
+
+    /*Begin of the footer*/
+        .footer{
+            background-color: black;
+            margin-top: 654px;
+            padding-bottom: 0px;
+            height: 100%;
+            display: flex;
+            flex: 1;
+            left: 0px;
+            bottom: 0px;
+            width: 100%;
+            color: white;
+        }
+    /*End of the footer*/
+
+    /*Begin of the footer-logo*/
+        .footer-logo{
+            height: 150px;
+            margin-bottom: auto;
+        }
+    /*End of the footer-logo*/
+
+        /*Begin of the quick links*/
+        .class{
+    color: #ccc;
+    background-color: #000;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.class:hover{
+    background-color: #000;
+}
+.class1{
+    background-color: #000;
+    color: #ccc;
+    margin-top: 6px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.class1:hover{
+    background-color: #000;
+}
+.fp{
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin-bottom: 5px;
+    margin-top: 38px;
+    margin-left: 18px;
+}
+.Us1{
+    font-size: 25px;
+    position: absolute;
+    margin-top: 5px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    margin-bottom: 28px;
+    margin-left: 4px;
+}
+        /*End of the quick links*/
+
+        /*Begin of the contact info*/
+            .contact{
+                display: block;
+                width: 100%;
+                height: auto;
+                padding-left: 6px;
+            }
+        /*End of the contact info*/
+    </style>
+</head>
+<body>
+    <!--The Logo container code-->
+    <div class="logo-container">
+    <img src="logo.jpeg" class="logo-1" 
+    class="logo-image">
+    <h1>LUXLUPEZ</h1>
+    <h2>TRADERS</h2>
+    </div>
+    <!--End of The Logo container code-->
+  
+    <!--Beginning of the navbar-->
+    <ul>
+        <a href="index.html" class="home">Home</a>
+        <a href="https://charts.deriv.com/deriv" 
+        class="deriv">
+            DerivTradingView</a>
+        <a href="classes.html">Schedule Class</a>
+        <a href="https://app.deriv.
+        com/dtrader?chart_type=area&interval
+        =1t&symbol=1HZ100V&trade_type=
+        rise_fall_equal" class="trade-hub">
+        Traders Hub </a>
+    </ul>
+    <!--End of the navbar-->
+
+    <!--Begin of the first container-->
+    <div class="bot-containers">
+        <img src="bot.jpg" alt="The bot"
+         class="first-image">
+        <div class="first-words">
+            <p class="first-word">
+                If you enjoy trading Digits,
+                 You'll love this!.</p>
+     <p class="Second-words">With the Digits 
+        Even/Odd strategy,
+             you predict whether
+    the exit price will be an even or odd digit based on
+    your selected number. Now, imagine enhancing your 
+    potential profits by leveraging a fully AI-powered 
+    bot. All you need is a reliable and effective bot to
+    optimize your trading strategy, and LUXLUPEZ Traders 
+    has you covered.
+    Trust us to provide the tools you need to succeed.
+               </p>
+        </div>
+        </div>
+    <!--End of the first container-->
+        
+    <!--Begin of the popup-->
+    <div id="overlay" class="overlay"></div>   
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" id="closePopup">&times;</span>
+        <img src="pop-image.jpg" alt="Image" class="popup-image">
+        <p>Explore the exciting world of binary options trading. 
+            Get started today and take your trading to the next level!
+               With LUXLUPEZ Traders.</p>
+        <a href="'https://track.deriv.com/_QZcI1noJMUIad7
+        NeR55Oi2Nd7ZgqdRLk/1/'" 
+        class="signup-button">Sign Up</a>
+    </div>
+</div>
+    <!--end-->
+    <!--Begin of the second container-->
+    <div class="second-container">
+        <div class="second-words">
+            <p class="words">Embark on your trading journey with us as we guide
+              you through various market strategies, optimal 
+              entry points, and key concepts in Forex trading.
+              Unlock your path to financial freedom by starting
+              your binary trading today, and take control of 
+              your financial future.
+            With comprehensive insights into Forex markets and a solid 
+            foundation in trading strategies, we're here to help you
+             make informed decisions and maximize your potential.</p>
+             </div>
+        <img src="bot1.jpg" alt="Even odd"
+         class="Second-image">
+   </div>
+    <!--End of the second container-->
+
+    <!--Begin of the footer-->
+
+    <footer class="footer">
+        <div>
+            <img src="logo.jpeg" alt="LUXLUPEZ 
+            Traders logo" class="footer-logo">
+        </div>
+
+        <!--Begin of the quick links-->
+
+        <div class="Quick-links">
+            <p class="Us1">Quick Links</p>
+          <p class="fp">Trading Bots</p>
+          <a href="classes.html" class="class">
+            Free online classes</a>
+     <a href="https://charts.deriv.com/deriv" 
+     class="class1">
+        Deriv Trading View</a>
+        <a href="https://app.deriv.com/dtrader?chart_
+        type=area&interval=
+        1t&symbol=1HZ100V&trade_type=rise_fall_equal" class="class1">Traders Hub</a>
+        <a href="https://track.deriv.com/
+        _QZcI1noJMUIad7
+        NeR5
+        5Oi2Nd7ZgqdRLk/1/" class="class1">Create a Deriv Account</a>
+        </div>
+        <!--End of the quick links-->
+
+       </footer>
+    <!--End of the footer-->
+
+    <!--Begin of the contact info-->
+    <div class="contact">
+        <p class="Us">Contact Us</p>
+        <p class="call">Call  ,Text or Whatsapp us
+            on,</p>
+        <p class="tag">+254784033085</p>
+        <p class="email">Email Us on:</p>
+        <p class="em">luxxlupez@gmail.com</p>
+    <!--End of the contact info-->
+    
+            <script>
+            // Function to show the popup and overlay after 5 seconds
+setTimeout(function() {
+    document.getElementById('overlay').style.display = 'block';
+    document.getElementById('popup').style.display = 'block';
+}, 5000); // 5000 milliseconds = 5 seconds
+
+// Close the popup and overlay when the close button is clicked
+document.getElementById('closePopup').onclick = function() {
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('popup').style.display = 'none';
+}
+
+// Optional: Close the popup and overlay when clicking outside of the popup
+window.onclick = function(event) {
+    const popup = document.getElementById('popup');
+    const overlay = document.getElementById('overlay');
+    if (event.target === overlay) {
+        overlay.style.display = 'none';
+        popup.style.display = 'none';
+    }
+}
+
+            </script>
+    
+</body>
+</html>
